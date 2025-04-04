@@ -1,0 +1,15 @@
+title: "The Remains of the Code"
+description: "Musings on backend, AI, and poetic pipelines."
+url: "https://ac259.github.io"
+baseurl: ""
+
+remote_theme: mmistakes/minimal-mistakes
+
+author:
+  name: "Anirudh Ramji"
+  email: "ramji.anirudh@gmail.com"
+  bio: "Engineer by trade, poet by compulsion."
+  avatar: "/assets/images/avatar.png"
+
+plugins:
+  - jekyll-include-cache
