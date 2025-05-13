@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "The Remains of the Code"
+title: ""
 author_profile: false
 ---
 
