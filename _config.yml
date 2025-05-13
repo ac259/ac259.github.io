@@ -4,6 +4,8 @@ url: "https://ac259.github.io"
 baseurl: ""
 
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "contrast"
+
 
 author:
   name: "Anirudh Ramji"
