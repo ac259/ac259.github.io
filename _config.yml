@@ -19,14 +19,21 @@ defaults:
       layout: single
       author_profile: false
       sidebar:
-        nav: "main"
+        nav: false
+      show_date: false
+      share: false
+      related: false
+      comments: false
+      prev_next: false
 
   - scope:
       path: ""
+      type: posts
     values:
       layout: single
       sidebar:
         nav: false
+      author_profile: false
 
 sass:
   style: compressed
