@@ -4,14 +4,27 @@ url: "https://ac259.github.io"
 baseurl: ""
 
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "contrast"
+minimal_mistakes_skin: "air"
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      sidebar:
+        nav: false
+
+sass:
+  style: compressed
 
 author:
   name: "Anirudh Ramji"
-  email: "ramji.anirudh@gmail.com"
-  bio: "Engineer by trade, poet by compulsion."
-  avatar: "/assets/images/avatar.png"
+  bio: "My musings and journey. Figured I'd write about it - probably will read it myself."
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:ramji.anirudh@gmail.com"
+
 
 plugins:
   - jekyll-include-cache
