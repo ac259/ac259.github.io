@@ -5,3 +5,11 @@ main:
     url: /year-archive/
   - title: "About"
     url: /about/
+  - title: "Ideas"
+    url: /ideas/
+  - title: "Papers"
+    url: /papers/
+  - title: "Books"
+    url: /books/
+  - title: "Articles"
+    url: /articles/
