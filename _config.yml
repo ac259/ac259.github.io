@@ -6,6 +6,9 @@ baseurl: ""
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air"
 
+header:
+  nav: "main"
+
 collections:
   pages:
     output: true
