@@ -63,6 +63,8 @@ author:
       url: "https://twitter.com/yourhandle"
 
 footer:
+  footer_scripts:
+    - /assets/js/theme-toggle.js
   links:
     - label: "GitHub"
       icon: "fab fa-github"

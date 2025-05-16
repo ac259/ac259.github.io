@@ -1,6 +1,66 @@
-$global-font-family: 'Inter', sans-serif;
-
+// Use Inter font
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-@import "minimal-mistakes/skins/contrast"; // or "air", "mint", etc.
+$global-font-family: 'Inter', sans-serif;
+
+// Optional: override colors, spacing, etc. here
+$body-heading-color: #111;
+$body-text-color: #222;
+$link-color: #0056d2;
+$link-color-hover: darken($link-color, 10%);
+$border-color: #eaeaea;
+
+// Import Minimal Mistakes theme skin
+@import "minimal-mistakes/skins/air"; // air, contrast, mint, etc.
+
+// Finally, import the theme itself
 @import "minimal-mistakes";
+
+// --- Optional: clean card/portfolio item polish ---
+.grid__item {
+  border-radius: 12px;
+  border: 1px solid $border-color;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  box-shadow: none;
+  background: white;
+}
+
+.grid__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+// --- Navigation cleanup ---
+.greedy-nav {
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+// Optional: spacing cleanup
+.page {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+[data-theme='dark'] {
+  background-color: #111;
+  color: #eee;
+
+  a {
+    color: #80b3ff;
+  }
+
+  .site-title,
+  .page__title,
+  .greedy-nav {
+    color: #fff;
+    background: #222;
+  }
+
+  .grid__item {
+    background-color: #1a1a1a;
+    border-color: #333;
+  }
+}
