@@ -1,15 +1,19 @@
-main:
-  - title: "Home"
-    url: /
-  - title: "Blog"
-    url: /year-archive/
-  - title: "About"
-    url: /about/
-  - title: "Ideas"
-    url: /ideas/
-  - title: "Papers"
-    url: /papers/
-  - title: "Books"
-    url: /books/
-  - title: "Articles"
-    url: /articles/
+# Navigation (cleaner with dropdowns)
+navigation:
+  main:
+    - title: "Home"
+      url: /
+    - title: "Blog"
+      url: /year-archive/
+    - title: "About"
+      url: /about/
+    - title: "Writing"
+      children:
+        - title: "Ideas"
+          url: /ideas/
+        - title: "Papers"
+          url: /papers/
+        - title: "Articles"
+          url: /articles/
+        - title: "Books"
+          url: /books/
