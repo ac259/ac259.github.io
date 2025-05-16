@@ -1,18 +1,17 @@
-navigation:
-  main:
-    - title: "Home"
-      url: /
-    - title: "Blog"
-      url: /blog/
-    - title: "About"
-      url: /about/
-    - title: "Writing"
-      children:
-        - title: "Ideas"
-          url: /ideas/
-        - title: "Papers"
-          url: /papers/
-        - title: "Articles"
-          url: /articles/
-        - title: "Books"
-          url: /books/
+main:
+  - title: "Home"
+    url: /
+  - title: "Blog"
+    url: /blog/
+  - title: "About"
+    url: /about/
+  - title: "Writing"
+    children:
+      - title: "Ideas"
+        url: /ideas/
+      - title: "Papers"
+        url: /papers/
+      - title: "Articles"
+        url: /articles/
+      - title: "Books"
+        url: /books/
