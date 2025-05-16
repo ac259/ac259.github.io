@@ -1,0 +1,35 @@
+---
+# Custom collection layout to ensure header/nav appears
+layout: default
+---
+
+{% comment %} Include the site header/navigation {% endcomment %}
+{% include header.html %}
+
+<main id="main" class="page-content" role="main">
+  <div class="archive">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.excerpt %}
+      <div class="page-excerpt">{{ page.excerpt }}</div>
+    {% endif %}
+    {% if page.entries_layout == "grid" %}
+      <div class="entries-grid">
+        {% for item in site[page.collection] %}
+          <div class="entry">
+            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            {% if item.excerpt %}<p>{{ item.excerpt }}</p>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <ul class="entries-list">
+        {% for item in site[page.collection] %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</main>
+
+{% comment %} Include the site footer {% endcomment %}
+{% include footer.html %}
