@@ -1,4 +1,4 @@
-title: "The Remains of the Code"
+title: "Anirudh Ramji"
 description: "Musings on backend, AI, and poetic pipelines."
 url: "https://ac259.github.io"
 baseurl: ""
@@ -10,6 +10,10 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
 
 defaults:
   - scope:
