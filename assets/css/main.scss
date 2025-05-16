@@ -64,3 +64,12 @@ $border-color: #eaeaea;
     border-color: #333;
   }
 }
+
+#dark-mode-toggle {
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  color: inherit;
+}
