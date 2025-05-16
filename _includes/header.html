@@ -1,20 +1,8 @@
 {% include masthead.html %}
 
 {% include nav.html %}
-<button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌓</button>
 
-<script>
-  // Optional: inline theme toggle (if not using external js)
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("dark-mode-toggle");
-    if (toggle) {
-      toggle.addEventListener("click", () => {
-        const html = document.documentElement;
-        const theme = html.getAttribute("data-theme");
-        const newTheme = theme === "dark" ? "light" : "dark";
-        html.setAttribute("data-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-      });
-    }
-  });
-</script>
+<button id="dark-mode-toggle" aria-label="Toggle Dark Mode"
+        style="position: absolute; right: 1rem; top: 1.2rem; font-size: 1.1rem; background: none; border: none; cursor: pointer;">
+  🌓
+</button>

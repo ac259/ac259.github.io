@@ -78,7 +78,7 @@ footer:
       url: "mailto:ramji.anirudh@gmail.com"
 
 footer_scripts:
-    - /assets/js/theme-toggle.js
+  - /assets/js/theme-toggle.js
 
 plugins:
   - jekyll-include-cache
